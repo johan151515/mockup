@@ -1,0 +1,66 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: 'Plus Jakarta Sans', sans-serif;
+  --font-sans: 'Inter', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+
+  --color-primary: #000000;
+  --color-primary-container: #131b2e;
+  --color-secondary: #0051d5;
+  --color-secondary-container: #316bf3;
+  --color-surface: #f8f9ff;
+  --color-surface-container-low: #eff4ff;
+  --color-surface-container: #e5eeff;
+  --color-surface-container-high: #dce9ff;
+  --color-surface-container-highest: #d3e4fe;
+  --color-surface-container-lowest: #ffffff;
+  --color-on-surface: #0b1c30;
+  --color-on-surface-variant: #45464d;
+  --color-on-primary: #ffffff;
+  --color-on-secondary: #ffffff;
+  --color-on-primary-container: #7c839b;
+  --color-tertiary-fixed: #6ffbbe;
+  --color-tertiary-fixed-dim: #4edea3;
+  --color-on-tertiary-container: #009668;
+  --color-tertiary-container: #002113;
+  --color-error: #ba1a1a;
+  --color-error-container: #ffdad6;
+  --color-on-error: #ffffff;
+  --color-on-error-container: #93000a;
+  --color-outline: #76777d;
+  --color-outline-variant: #c6c6cd;
+}
+
+@layer base {
+  html, body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-sans);
+    overscroll-behavior-y: none;
+  }
+}
+
+@keyframes scanlaser {
+  0%, 100% {
+    top: 8px;
+    opacity: 0.85;
+  }
+  50% {
+    top: calc(100% - 10px);
+    opacity: 1;
+  }
+}
+
+.animate-laser {
+  animation: scanlaser 2.2s ease-in-out infinite;
+}
+
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+  vertical-align: middle;
+}
+
+.material-symbols-fill {
+  font-variation-settings: 'FILL' 1, 'wght' 500, 'GRAD' 0, 'opsz' 24 !important;
+}

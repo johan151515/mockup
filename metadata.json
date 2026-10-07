@@ -1,0 +1,6 @@
+{
+  "name": "CampusPass - Control de Acceso y Asistencia",
+  "description": "Sistema integral de credenciales digitales QR seguras, control de torniquetes y equipos en portería, y asistencia académica institucional.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
